@@ -1,0 +1,101 @@
+.about_main_section {
+    height: 440px;
+    background: url(../img/about/about-main.png) no-repeat center center/cover;
+    @media (max-width: 990px) {
+        height: 480px;
+    }
+    @media (max-width: 576px) {
+        height: 380px;
+    }
+    .about_main_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .about_main_title {
+        color: #fff;
+        margin-bottom: 30px;
+        font: 2.75rem "Rodch";
+        @media (max-width: 990px) {
+            font: 1.75rem "Rodch";
+            margin-bottom: 15px;
+        }
+    }
+    .about_main_text {
+        max-width: 500px;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+        font: 400 .87rem/24px 'Montserrat', sans-serif;
+        @media (max-width: 990px) {
+            font: 400 .75rem/20px 'Montserrat', sans-serif;
+        }
+    }
+}
+
+.about_1 {
+    background: url(../img/about/about-2.png) no-repeat center center/cover;
+}
+
+.about_2 {
+    background: url(../img/about/about-3.png) no-repeat center center/cover;
+}
+
+.about_section_background {
+    height: 400px;
+    @media (max-width: 576px) {
+        height: 360px;
+    }
+    .about_wrap {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about_title {
+        color: #fff;
+        font: 1.75rem "Rodch";
+        padding: 40px;
+        border: 2px solid #d99a1e;
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        @media (max-width: 990px) {
+            font: 1.25rem "Rodch";
+            padding: 25px;
+        }
+    }
+}
+
+.about_section {
+    padding: 100px 0;
+    @media (max-width: 990px){
+        padding: 60px 0;
+    }
+    .about_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about_title {
+        color: #000;
+        margin-bottom: 35px;
+        font: 1.75rem "Rodch";
+        text-align: center;
+        @media (max-width: 990px) {
+            font: 1.2rem "Rodch";
+            margin-bottom: 15px;
+        }
+    }
+    .about_text {
+        max-width: 800px;
+        margin: 0 auto;
+        color: #000;
+        text-align: center;
+        font: 400 .87rem/24px 'Montserrat', sans-serif;
+    }
+}

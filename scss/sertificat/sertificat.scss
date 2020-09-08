@@ -1,0 +1,158 @@
+.sertificat_main_section {
+    margin-bottom: 40px;
+    height: 500px;
+    background: url(../img/sertificat/sertificat.png) no-repeat center center/cover;
+    @media (max-width: 990px) {
+        height: 480px;
+    }
+    @media (max-width: 576px) {
+        height: 380px;
+        margin-bottom: 20px;
+    }
+    .sertificat_main_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .sertificat_main_title {
+        color: #fff;
+        margin-bottom: 30px;
+        font: 2.75rem "Rodch";
+        @media (max-width: 990px) {
+            font: 1.75rem "Rodch";
+            margin-bottom: 15px;
+        }
+    }
+    .sertificat_main_text {
+        max-width: 500px;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+        font: 400 .87rem/24px 'Montserrat', sans-serif;
+        @media (max-width: 990px) {
+            font: 400 .75rem/20px 'Montserrat', sans-serif;
+        }
+    }
+}
+
+.sertificat_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+    margin-bottom: 100px;
+    @media (max-width: 990px) {
+        grid-gap: 20px;
+        margin-bottom: 75px;
+    }
+}
+
+.sertificat_box {
+    height: 440px;
+    .container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+    .sertificat_box_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 760px;
+        margin: 0 auto;
+        background: #fff;
+        position: relative;
+        z-index: 9;
+        margin: 0 15px;
+        padding: 50px 35px;
+        @media (max-width: 576px) {
+            border: none;
+            padding: 0;
+        }
+        .sertificat_box_container {
+            padding: 10px 25px;
+            border: 1px solid #d99a1e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @media (max-width: 576px) {
+                border: none;
+                padding: 35px 20px;
+            }
+        }
+        .setificat_title {
+            font: 1.75rem "Rodch";
+            text-align: center;
+            position: relative;
+            top: -25px;
+            background: #fff;
+            padding: 0 10px;
+            text-transform: uppercase;
+            @media (max-width: 576px) {
+               top: 0;
+               font-size: 1.25rem;
+               margin-bottom: 25px;
+            }
+        }
+        .sertificat_text {
+            font: 400 .87rem/24px 'Montserrat', sans-serif;
+            text-align: center;
+            @media (max-width: 576px) {
+                margin-bottom: 25px;
+            }
+        }
+        .sertificat_btn {
+            text-transform: uppercase;
+            padding: 15px 20px;
+            background: #d99a1e;
+            font: 400 1rem "Rodch";
+            white-space: nowrap;
+            border: none;
+            color: #fff;
+            transition: .3s;
+            position: relative;
+            bottom: -35px;
+            @media (max-width: 576px) {
+                bottom: 0;
+            }
+            &::before {
+                content: '';
+                background: #fff;
+                position: absolute;
+                left: -10px;
+                width: 10px;
+                height: 100%;
+                display: block;
+                top: 0;
+            }
+            &::after {
+                content: '';
+                background: #fff;
+                position: absolute;
+                right: -10px;
+                width: 10px;
+                height: 100%;
+                display: block;
+                top: 0;
+            }
+            &:hover {
+                background: #fab937;
+            }
+        }
+    }
+}

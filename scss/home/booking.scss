@@ -1,0 +1,50 @@
+.booking {
+    margin-bottom: 90px;
+    @media (max-width: 990px) {
+        margin-bottom: 75px;
+    }
+    .booking_text {
+        text-align: center;
+        margin-bottom: 40px;
+        font: 400 .87rem 'Montserrat', sans-serif; 
+        @media (max-width: 990px) {
+            margin-bottom: 35px;
+        }
+    }
+    .booking_form {
+        max-width: 625px;
+        margin: 0 auto;
+        display: flex;
+        @media (max-width: 990px) {
+            padding: 0 15px;
+        }
+        @media (max-width: 450px) {
+            flex-direction: column;
+        }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 0;
+            font: 400 .87rem 'Montserrat', sans-serif; 
+            background: #fff;
+            padding: 15px;
+            border: none;
+            @media (max-width: 450px) {
+                margin-bottom: 12px;
+            }
+        }
+        button {
+            text-transform: uppercase;
+            padding: 15px 20px;
+            background: #d99a1e;
+            font: 400 1rem "Rodch";
+            white-space: nowrap;
+            border: none;
+            color: #fff;
+            transition: .3s;
+            &:hover {
+                background: #fab937;
+            }
+        }
+    }
+}

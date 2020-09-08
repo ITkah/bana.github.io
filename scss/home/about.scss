@@ -1,0 +1,49 @@
+.about_us {
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    @media (max-width: 990px) {
+        margin-bottom: 75px;
+    }
+    .about_us_text {
+        max-width:600px;
+        margin: 0 auto;
+        color: #000;
+        font: 300 .87rem/26px 'Montserrat', sans-serif; 
+        margin-bottom: 45px;
+        text-align: center;
+        @media (max-width: 990px) {
+            margin-bottom: 35px;
+        }
+    }
+    .about_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 20px;
+        font: 400 1rem "Rodch";
+        white-space: nowrap;
+        color:#000;
+        transition: .3s;
+        border: 2px solid #d99a1e;
+        @media (max-width: 450px) {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        &:hover {
+            color: #fff;
+            background: #d99a1e;
+            span {
+                color: #fff;
+            }
+        }
+        span {
+            color: #d99a1e;
+            position: relative;
+            right: -8px;
+        }
+    }
+}

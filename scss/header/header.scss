@@ -1,0 +1,264 @@
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 15px;
+    box-sizing: border-box;
+    @media (max-width: 990px) {
+        top: 10px;
+    }
+    .container {
+        max-width: 1170px;
+    }
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: 475px 150px 300px 1fr;
+    grid-gap: 35px;
+    @media (max-width: 1200px) {
+        grid-template-columns: 3fr 130px 300px 1fr;
+        padding: 0 15px;
+        grid-gap: 20px;
+    }
+    @media (max-width: 1100px) {
+        grid-template-columns: 3fr 130px 1fr 1fr;
+        padding: 0 15px;
+        grid-gap: 20px;
+    }
+    @media (max-width: 990px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        max-width: 100%;
+        height: auto;
+        @media (max-width: 990px) {
+            margin: 0 auto;
+            position: relative;
+            right: -20px;
+        }
+    }
+    .desk_menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 990px) {
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        li {
+            position: relative;
+            padding: 0 10px;
+            @media (max-width: 990px) {
+                padding: 5px 10px;
+            }
+            &:hover {
+                .sub_menu {
+                    opacity: 1;
+                }
+            }
+            .sub_menu {
+                position: absolute;
+                opacity: 0;
+                transition: .2s;
+                top: 90%;
+                width: 100%;
+                box-sizing: border-box;
+                @media (max-width: 990px) {
+                    top: 0;
+                    position: relative;
+                    margin-bottom: -5px;
+                }
+                li {
+                    padding: 5px 0;
+                    @media (max-width: 990px) {
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+        .arrow_mob {
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            display: block;
+            right: -18px;
+            top: 6px;
+            pointer-events: none;
+            @media (max-width: 1300px) {
+                right: -5px;
+            }
+            @media (max-width: 990px) {
+                right: -10px;
+                top: 9px;
+                pointer-events: auto;
+            }
+            &::before {
+                content: '';
+                background: url(../img/header/down-arrow.svg);
+                background-size: 10px 10px;
+                height: 10px;
+                width: 10px;
+                display: block;
+                z-index: 9;
+                position: absolute;
+                @media (max-width: 990px) {
+                    background: url(../img/header/down-arrow-black.svg);  
+                    background-size: 12px 12px;
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+        }
+        a {
+            cursor: pointer;
+            color: #fff;
+            font: 500 .87rem 'Montserrat', sans-serif; 
+            @media (max-width: 990px) {
+                color: #000;
+                font-size: 1rem;
+            }
+        }
+        p {
+            color: #fff;
+            cursor: pointer;
+            font: 500 .87rem 'Montserrat', sans-serif; 
+            @media (max-width: 990px) {
+                color: #000;
+                font-size: 1rem;
+            }
+        }
+    }
+    .header_btn_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .desk_menu {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+
+    .header_btn {
+        text-transform: uppercase;
+        padding: 15px;
+        background: #d99a1e;
+        font: 400 .95rem "Rodch";
+        white-space: nowrap;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        transition: .3s;
+        &:hover {
+            background: #fab937;
+        }
+    }
+}
+
+
+.mob_menu {
+    display: none;
+    @media (max-width: 990px) {
+        display: block;
+        position: fixed;
+        background: #fff;
+        height: 100vh;
+        width: 60vw;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        transition: .4s;
+        transform: translateX(-150%);
+        box-shadow: 30px 0px 30px 0px rgba(50, 50, 50, .3);
+    }
+    .mob_menu_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        justify-content: center;
+        position: relative;
+        .close {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            height: 20px;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+    }
+    li {
+        position: relative;
+        padding: 10px;
+        .sub_menu {
+            display: none;
+            top: 0;
+            position: relative;
+            li {
+                padding: 5px 0;
+                @media (max-width: 990px) {
+                    padding: 5px 0;
+                }
+            }
+            li:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+    .arrow_mob {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        display: block;
+        right: -10px;
+        top: 14px;
+        pointer-events: auto;
+        &::before {
+            content: '';
+            background: url(../img/header/down-arrow-black.svg);  
+            background-size: 12px 12px;
+            height: 12px;
+            width: 12px;
+            display: block;
+            z-index: 9;
+            position: absolute;
+        }
+    }
+    .header_btn {
+        margin: 10px;
+    }
+    a {
+        color: #000;
+        font: 500 1rem 'Montserrat', sans-serif; 
+    }
+    p {
+        color: #000;
+        font: 500 1rem 'Montserrat', sans-serif; 
+    }
+}
+
+.menu {
+    display: none;
+    @media (max-width: 990px) {
+        display: block;
+        height: 25px;
+    }
+}
+
+.active_menu {
+    transform: translateX(0);
+}
