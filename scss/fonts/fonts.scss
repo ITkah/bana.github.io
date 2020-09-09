@@ -1,5 +1,8 @@
 @font-face {
-    font-family: "Rodch";
-    src: url("../fonts/RodchenkoC.ttf") format("ttf");
-    font-display: swap;
+  font-family: "Rodch";
+  src: url("/fonts/RodchenkoC.eot");
+  src: local("☺"), url("/fonts/RodchenkoC.woff") format("woff"),
+    url("/fonts/RodchenkoC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
