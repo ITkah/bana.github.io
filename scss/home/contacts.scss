@@ -106,10 +106,22 @@
     background: url('../img/contact/sprite.png') -113px -10px;
 }
 
+.bg-mail {
+    display: block;
+    width: 30px; height: 21px;
+    background: url('../img/contact/sprite.png') -10px -110px;
+}
+
 .bg-map {
     display: block;
     width: 32px; height: 33px;
     background: url('../img/contact/sprite.png') -10px -10px;
+}
+
+.bg-phone_sm {
+    display: block;
+    width: 22px; height: 24px;
+    background: url('../img/contact/sprite.png') -113px -57px;
 }
 
 .bg-phone {

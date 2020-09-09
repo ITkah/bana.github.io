@@ -1,0 +1,20 @@
+.mob_btn {
+    display: none;
+    @media (max-width: 700px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 5px 0;
+        grid-gap: 5px;
+    }
+    .mob_btn_item {
+        padding: 20px;
+        background: #9e9692;
+        text-align: center;
+        color: #fff;
+        font: 1rem "Rodch";
+        text-transform: uppercase;
+    }
+    .mob_btn_item:first-child {
+        background: #d99a1e;
+    }
+}

@@ -350,9 +350,9 @@ header {
     .main_section {
       margin-bottom: 50px;
       height: 80vh; } }
-  @media (max-width: 576px) {
+  @media (max-width: 700px) {
     .main_section {
-      margin-bottom: 10px;
+      margin-bottom: 0;
       height: 400px; } }
   @media (max-width: 360px) {
     .main_section {
@@ -529,9 +529,6 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    @media (max-width: 990px) {
-      .booking .booking_form {
-        padding: 0 15px; } }
     @media (max-width: 450px) {
       .booking .booking_form {
         -webkit-box-orient: vertical;
@@ -780,11 +777,23 @@ header {
   height: 27px;
   background: url("../img/contact/sprite.png") -113px -10px; }
 
+.bg-mail {
+  display: block;
+  width: 30px;
+  height: 21px;
+  background: url("../img/contact/sprite.png") -10px -110px; }
+
 .bg-map {
   display: block;
   width: 32px;
   height: 33px;
   background: url("../img/contact/sprite.png") -10px -10px; }
+
+.bg-phone_sm {
+  display: block;
+  width: 22px;
+  height: 24px;
+  background: url("../img/contact/sprite.png") -113px -57px; }
 
 .bg-phone {
   display: block;
@@ -797,6 +806,208 @@ header {
   width: 36px;
   height: 27px;
   background: url("../img/contact/sprite.png") -10px -63px; }
+
+.mob_btn {
+  display: none; }
+  @media (max-width: 700px) {
+    .mob_btn {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 5px 0;
+      grid-gap: 5px; } }
+  .mob_btn .mob_btn_item {
+    padding: 20px;
+    background: #9e9692;
+    text-align: center;
+    color: #fff;
+    font: 1rem "Rodch";
+    text-transform: uppercase; }
+  .mob_btn .mob_btn_item:first-child {
+    background: #d99a1e; }
+
+.contact_main_section {
+  height: 600px;
+  background: url(../img/contact/contact-map.png) no-repeat center center/cover; }
+  @media (max-width: 990px) {
+    .contact_main_section {
+      height: 480px; } }
+  @media (max-width: 576px) {
+    .contact_main_section {
+      height: 380px;
+      background-position: 21% 0; } }
+  .contact_main_section .contact_main_wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    position: relative;
+    z-index: 9; }
+  .contact_main_section .contact_main_title {
+    color: #fff;
+    margin-bottom: 30px;
+    font: 2.75rem "Rodch";
+    position: relative;
+    z-index: 10; }
+    @media (max-width: 990px) {
+      .contact_main_section .contact_main_title {
+        font: 1.75rem "Rodch";
+        margin-bottom: 15px; } }
+  .contact_main_section .contact_main_text {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    font: 400 .87rem/24px 'Montserrat', sans-serif; }
+    @media (max-width: 990px) {
+      .contact_main_section .contact_main_text {
+        font: 400 .75rem/20px 'Montserrat', sans-serif; } }
+
+.contact_aboutus_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  top: -100px; }
+  @media (max-width: 990px) {
+    .contact_aboutus_wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      top: -70px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
+  .contact_aboutus_wrap .contact_aboutus_img {
+    height: 100%; }
+    .contact_aboutus_wrap .contact_aboutus_img img {
+      max-width: 100%;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .contact_aboutus_wrap .contact_aboutus_info {
+    padding: 60px 70px;
+    background: #fff; }
+    @media (max-width: 990px) {
+      .contact_aboutus_wrap .contact_aboutus_info {
+        padding: 40px 20px; } }
+    .contact_aboutus_wrap .contact_aboutus_info .contact_title {
+      text-align: center;
+      font: 1.75rem "Rodch";
+      margin-bottom: 40px; }
+      @media (max-width: 990px) {
+        .contact_aboutus_wrap .contact_aboutus_info .contact_title {
+          margin-bottom: 30px;
+          font: 1.2rem "Rodch"; } }
+    .contact_aboutus_wrap .contact_aboutus_info .contact_box_wrap {
+      margin-bottom: 40px; }
+      @media (max-width: 990px) {
+        .contact_aboutus_wrap .contact_aboutus_info .contact_box_wrap {
+          margin-bottom: 30px; } }
+      .contact_aboutus_wrap .contact_aboutus_info .contact_box_wrap .contact_box {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 20px; }
+        @media (max-width: 990px) {
+          .contact_aboutus_wrap .contact_aboutus_info .contact_box_wrap .contact_box {
+            display: grid;
+            grid-template-columns: 40px 1fr; } }
+        .contact_aboutus_wrap .contact_aboutus_info .contact_box_wrap .contact_box span {
+          margin-right: 10px; }
+          @media (max-width: 990px) {
+            .contact_aboutus_wrap .contact_aboutus_info .contact_box_wrap .contact_box span {
+              width: 30px; } }
+        .contact_aboutus_wrap .contact_aboutus_info .contact_box_wrap .contact_box .contact_info_title {
+          color: #919191;
+          font: 400 .75rem/20px 'Montserrat', sans-serif; }
+        .contact_aboutus_wrap .contact_aboutus_info .contact_box_wrap .contact_box .contact_info_text {
+          font: 600 1.125rem 'Montserrat', sans-serif;
+          color: #000; }
+          @media (max-width: 990px) {
+            .contact_aboutus_wrap .contact_aboutus_info .contact_box_wrap .contact_box .contact_info_text {
+              font: 600 .95rem 'Montserrat', sans-serif; } }
+    .contact_aboutus_wrap .contact_aboutus_info .contact_detail_fedback {
+      padding: 25px;
+      border: 1px solid #d99a1e;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: relative;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      @media (max-width: 990px) {
+        .contact_aboutus_wrap .contact_aboutus_info .contact_detail_fedback {
+          padding: 20px; } }
+      .contact_aboutus_wrap .contact_aboutus_info .contact_detail_fedback .detail_contact_title {
+        font: 1.5rem "Rodch";
+        text-align: center;
+        color: #d99a1e;
+        position: absolute;
+        top: -15px;
+        background: #fff;
+        padding: 0 10px; }
+        @media (max-width: 990px) {
+          .contact_aboutus_wrap .contact_aboutus_info .contact_detail_fedback .detail_contact_title {
+            font: 1.2rem "Rodch"; } }
+      .contact_aboutus_wrap .contact_aboutus_info .contact_detail_fedback .detail_contact_num {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 10px; }
+        .contact_aboutus_wrap .contact_aboutus_info .contact_detail_fedback .detail_contact_num span {
+          margin-right: 10px; }
+        .contact_aboutus_wrap .contact_aboutus_info .contact_detail_fedback .detail_contact_num a {
+          color: #000;
+          font: 600 1.125rem 'Montserrat', sans-serif; }
+      .contact_aboutus_wrap .contact_aboutus_info .contact_detail_fedback .contact_social {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .contact_aboutus_wrap .contact_aboutus_info .contact_detail_fedback .contact_social a {
+          margin: 0 5px; }
 
 .stock_main {
   height: 600px;
@@ -1792,6 +2003,10 @@ textarea {
   letter-spacing: 2.8px;
   color: #000;
   font: 1.75rem/36px "Rodch"; }
+  @media (max-width: 990px) {
+    .title_simple {
+      margin-bottom: 30px;
+      font: 1.65rem/34px "Rodch"; } }
 
 @font-face {
   font-family: "Rodch";

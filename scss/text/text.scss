@@ -4,4 +4,8 @@
     letter-spacing: 2.8px;
     color:#000;
     font: 1.75rem/36px "Rodch";
+    @media (max-width: 990px) {
+        margin-bottom: 30px;
+        font: 1.65rem/34px "Rodch";
+    }
 }
