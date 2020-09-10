@@ -1,8 +1,8 @@
 $(".phone").on("input", function () {
   $(this).val(
-      $(this)
-          .val()
-          .replace(/[A-Za-zА-Яа-яЁё]/, "")
+    $(this)
+      .val()
+      .replace(/[A-Za-zА-Яа-яЁё]/, "")
   );
 });
 
@@ -29,7 +29,7 @@ $(".scrollto a").on("click", function () {
   event.preventDefault();
 
   var id = $(this).attr("href"),
-      top = $(id).offset().top - 50;
+    top = $(id).offset().top - 50;
 
   $("body,html").animate({ scrollTop: top }, 1200);
 });
@@ -39,8 +39,8 @@ $(".acc-head").on("click", function () {
   $(this).next().slideToggle(200).parent().toggleClass("active_acc");
 });
 
-popup = () => {
-  const popup = document.getElementById("popup_overlay");
+popupBooked = () => {
+  const popup = document.getElementById("popup_overlay-booked");
   const popupCloseBtn = document.getElementById("btn_close");
   const popupOpenBtn = document.querySelectorAll(".uslugi_btn");
 
@@ -56,4 +56,21 @@ popup = () => {
     popup.classList.remove("show");
   });
 };
-popup();
+popupBooked();
+
+popupReviews = () => {
+  const popupReviews = document.getElementById("fixed_overlay-reviews");
+  const popupCloseBtn = document.getElementById("btn_close");
+  const popupOpenBtnReviews = document.getElementById("popup_open-reviews");
+
+  popupOpenBtnReviews.addEventListener("click", function () {
+    popupReviews.classList.add("show");
+    popupReviews.classList.remove("hide");
+  });
+
+  popupCloseBtn.addEventListener("click", function () {
+    popupReviews.classList.add("hide");
+    popupReviews.classList.remove("show");
+  });
+};
+popupReviews();
