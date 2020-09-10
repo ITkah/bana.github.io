@@ -1,8 +1,8 @@
 $(".phone").on("input", function () {
   $(this).val(
-    $(this)
-      .val()
-      .replace(/[A-Za-zА-Яа-яЁё]/, "")
+      $(this)
+          .val()
+          .replace(/[A-Za-zА-Яа-яЁё]/, "")
   );
 });
 
@@ -29,7 +29,7 @@ $(".scrollto a").on("click", function () {
   event.preventDefault();
 
   var id = $(this).attr("href"),
-    top = $(id).offset().top - 50;
+      top = $(id).offset().top - 50;
 
   $("body,html").animate({ scrollTop: top }, 1200);
 });
