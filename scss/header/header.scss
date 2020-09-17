@@ -37,7 +37,11 @@ header {
         @media (max-width: 990px) {
             margin: 0 auto;
             position: relative;
-            right: -20px;
+            right: -30px;
+            top: -5px;
+        }
+        @media (max-width: 320px) {
+            right: -25px;
         }
     }
     .desk_menu {

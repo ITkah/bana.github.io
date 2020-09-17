@@ -47,7 +47,11 @@ header {
       .header_container .logo {
         margin: 0 auto;
         position: relative;
-        right: -20px; } }
+        right: -30px;
+        top: -5px; } }
+    @media (max-width: 320px) {
+      .header_container .logo {
+        right: -25px; } }
   .header_container .desk_menu {
     display: -webkit-box;
     display: -webkit-flex;
@@ -354,6 +358,9 @@ header {
     .main_section {
       margin-bottom: 0;
       height: 400px; } }
+  @media (max-width: 576px) {
+    .main_section {
+      background-position: 56% 0; } }
   @media (max-width: 360px) {
     .main_section {
       height: 320px; } }
@@ -2064,6 +2071,9 @@ footer {
         margin-bottom: 45px;
         grid-gap: 20px 30px;
         grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 576px) {
+      .footer_container .footer_menu {
+        display: none; } }
     .footer_container .footer_menu a {
       color: #fff;
       position: relative;
@@ -2087,6 +2097,14 @@ footer {
         display: block;
         opacity: 0;
         background: #fff; }
+  .footer_container .footer_menu_mob {
+    display: none; }
+    @media (max-width: 576px) {
+      .footer_container .footer_menu_mob {
+        display: grid;
+        margin-bottom: 45px;
+        grid-gap: 20px 30px;
+        grid-template-columns: repeat(2, 1fr); } }
   .footer_container .footer_pay_box {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2139,3 +2157,20 @@ footer {
     .footer_container .footer_pay_box img:last-child {
       position: relative;
       top: -1.5px; }
+
+.uslugi_spa_bg {
+  background: url(../img/uslugi/uslugi-spa.png) no-repeat center center/cover; }
+
+.kosmetolog_bg {
+  background: url(../img/uslugi/kosmetolog.png) no-repeat center center/cover; }
+
+@media (max-width: 990px) {
+  .logo_link img {
+    left: 0;
+    right: 0; }
+  .logo_link {
+    position: relative;
+    right: -22px;
+    margin: 0 auto; }
+  .mob_menu a {
+    text-transform: uppercase; } }
